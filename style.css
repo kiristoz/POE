@@ -6,3 +6,62 @@
     width: 40%;
   }
 
+.Fan
+{
+    text-align: center;
+    
+    font-family: "papyrus", monospace;
+      
+  }
+
+
+.Sci
+{
+    text-align: center;
+    font-family: "papyrus", monospace;
+  }
+
+.Act
+{
+    text-align: center;
+    font-family: "papyrus", monospace;
+  }
+
+.Text
+
+{
+    text-align: center;
+    font-family: "papyrus", monospace;
+  }
+
+.Ki
+
+{
+    text-align: center;
+    font-family: "papyrus", monospace;
+  }
+
+
+P 
+{
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+
+.cu
+{
+background-image: url(images/book-store.jpg);
+background-position: center;
+background-repeat: no-repeat;
+}
+
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
