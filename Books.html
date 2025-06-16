@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Books</title>
+        <title>Book shelf</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -11,20 +11,24 @@
             <nav>               
                 <ul>
             <a href="homepage.html">Homepage</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-            <a href="Books.html">Books</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <a href="Books.html">Bookshelf</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
             <a href="Contact us.html">Contact us</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
             <a href="About us.html">About us</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <a href="gallery.html">Gallery</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
             </ul>
             </nav>
           </div>
     </body>
     <body>
+        <script src= "Script.js"></script>
+        <img src="images/book-store.jpg" class="sec_img" width="150" height="75">
         <hr>
-        <h1>Books</h1>
+        <h1>Bookshelf</h1>
         <br>
 
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
         <h3 class="Fan">Fantasy</h3>
-        <table border="1">
+        <table border="1" class="Table">
             <tr>
                 <th>
                     Alice's Adventures in Wonderland
@@ -43,11 +47,22 @@
                 </th>
             </tr>
             <tr>
-                <td><img src="images/Fantasy/AliceWon.jpg" width="300" height="500"></td>
-                <td><img src="images/Fantasy/TheSITS.jpg" width="300" height="500"></td>
-                <td><img src="images/Fantasy/TheHob.jpg" width="300" height="500"></td>
-                <td><img src="images/Fantasy/ThePB.jpg" width="300" height="500"></td>
-                <td><img src="images/Fantasy/Kind.jpg" width="300" height="500"></td>
+                <td><img id="booksimg" src="images/Fantasy/AliceWon.jpg" width="300" height="500" alt="Alice">
+                      <div id="myModal" class="modal">
+                      <span class="close">&times;</span>
+                      <img class="modal-content" id="img01">
+                      </div>
+                </td>
+                <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                 <img class="modal-content" id="img01">
+                 <div id="caption"></div>
+                </div>
+
+                <td><img src="images/Fantasy/TheSITS.jpg" width="300" height="500" alt="Excalibur"></td>
+                <td><img src="images/Fantasy/TheHob.jpg" width="300" height="500" alt="Hobbit"></td>
+                <td><img src="images/Fantasy/ThePB.jpg" width="300" height="500" alt="Bride"></td>
+                <td><img src="images/Fantasy/Kind.jpg" width="300" height="500" alt="Kind"></td>
             </tr>
             <tr>
                 <td>R350</td>
@@ -81,11 +96,11 @@
                 </th>
             </tr>
             <tr>
-                <td><img src="images/Action/HPSS.jpg" width="300" height="500"></td>
-                <td><img src="images/Action/JP.jpg" width="300" height="500"></td>
-                <td><img src="images/Action/TheFR.jpg" width="300" height="500"></td>
-                <td><img src="images/Action/TheHG.jpg" width="300" height="500"></td>
-                <td><img src="images/Action/TheLR.jpg" width="300" height="500"></td>
+                <td><img src="images/Action/HPSS.jpg" width="300" height="500" alt="HarryPotter"></td>
+                <td><img src="images/Action/JP.jpg" width="300" height="500" alt="Jurassic"></td>
+                <td><img src="images/Action/TheFR.jpg" width="300" height="500" alt="Fellowship" ></td>
+                <td><img src="images/Action/TheHG.jpg" width="300" height="500" alt="HungerGames"></td>
+                <td><img src="images/Action/TheLR.jpg" width="300" height="500" alt="LordOfTheRing"></td>
             </tr>
             <tr>
                 <td>R370</td>
@@ -118,11 +133,11 @@
                 </th>
             </tr>
             <tr>
-                <td><img src="images/Sci-Fi/CF.jpg" width="300" height="500"></td>
-                <td><img src="images/Sci-Fi/EG.jpg" width="300" height="500"></td>
-                <td><img src="images/Sci-Fi/MJ.jpg" width="300" height="500"></td>
-                <td><img src="images/Sci-Fi/TheM.jpg" width="300" height="500"></td>
-                <td><img src="images/Sci-Fi/TheTM.jpg" width="300" height="500"></td>
+                <td><img src="images/Sci-Fi/CF.jpg" width="300" height="500" alt="Catching"></td>
+                <td><img src="images/Sci-Fi/EG.jpg" width="300" height="500" alt="Ender"></td>
+                <td><img src="images/Sci-Fi/MJ.jpg" width="300" height="500" alt="Mockingjay"></td>
+                <td><img src="images/Sci-Fi/TheM.jpg" width="300" height="500" alt="Martian"></td>
+                <td><img src="images/Sci-Fi/TheTM.jpg" width="300" height="500" alt="TimeMachine"></td>
             </tr>
             <tr>
                 <td>R370</td>
@@ -150,9 +165,9 @@
 
             </tr>
             <tr>
-                <td><img src="images/Kids/CCF.jpg" width="300" height="500"></td>
-                <td><img src="images/Kids/CW.jpg" width="300" height="500"></td>
-                <td><img src="images/Kids/GEH.jpg" width="300" height="500"></td>
+                <td><img src="images/Kids/CCF.jpg" width="300" height="500" alt="Charlie"></td>
+                <td><img src="images/Kids/CW.jpg" width="300" height="500"  alt="Charlotte"></td>
+                <td><img src="images/Kids/GEH.jpg" width="300" height="500"  alt="Green"></td>
 
             </tr>
             <tr>
@@ -180,9 +195,9 @@
 
             </tr>
             <tr>
-                <td><img src="images/Textbooks/it-gr12.jpg" width="300" height="500"></td>
-                <td><img src="images/Textbooks/maths-12.jpg" width="300" height="500"></td>
-                <td><img src="images/Textbooks/science-12.jpg" width="300" height="500"></td>
+                <td><img src="images/Textbooks/it-gr12.jpg" width="300" height="500"  alt="IT-12"></td>
+                <td><img src="images/Textbooks/maths-12.jpg" width="300" height="500"  alt="maths-12"></td>
+                <td><img src="images/Textbooks/science-12.jpg" width="300" height="500"  alt="Science-12"></td>
 
             </tr>
             <tr>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <div>
+            <nav>               
+            <ul>
+            <a href="homepage.html">Homepage</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <a href="Books.html">Bookshelf</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <a href="Contact us.html">Contact us</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <a href="About us.html">About us</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <a href="gallery.html">Gallery</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            </ul>
+            </nav>
+          </div>
+    </body>
+<body>
+    <script src= "Script.js"></script>
+    <h2 style="text-align:center">Lightbox</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="images/Fantasy/AliceWon.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/Action/TheHG.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/Kids/CCF.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/Sci-Fi/CF.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/Fantasy/AliceWon.jpg" style="width:50%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/Action/TheHG.jpg" style="width:50%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/Kids/CCF.jpg" style="width:50%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/Sci-Fi/CF.jpg" style="width:50%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="images/Fantasy/AliceWon.jpg" style="width:100%" onclick="currentSlide(1)" alt="Alice's Adventures in Wonderland">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/Action/TheHG.jpg" style="width:100%" onclick="currentSlide(2)" alt="The hunger games">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/Kids/CCF.jpg" style="width:100%" onclick="currentSlide(3)" alt="Charlie and the chocolate factory">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/Sci-Fi/CF.jpg" style="width:100%" onclick="currentSlide(4)" alt="The hunger games: Catching Fire">
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
