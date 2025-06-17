@@ -1,3 +1,4 @@
+//tabs
 function openCity(evt, cityName) 
 {
   var i, tabcontent, tablinks;
@@ -56,7 +57,7 @@ function myFunction() {
   }
 }
 
-
+//lightbox
 function openModal() {
   document.getElementById("myModal").style.display = "block";
 }
@@ -94,6 +95,7 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
+//loader
     (function() {
       emailjs.init("b-OzHNB_lGVfvhlzc"); 
     })();
@@ -125,3 +127,41 @@ function showSlides(n) {
     preloader.style.display = 'none';
     content.style.display = 'block';
   });
+
+//search
+  function filterTable(input, tableId) {
+  const filter = input.value.toLowerCase();
+  const table = document.getElementById(tableId);
+  const rows = table.getElementsByTagName("tb")[0].getElementsByTagName("tr");
+
+  for (let row of rows) {
+    let text = row.textContent.toLowerCase();
+    row.style.display = text.includes(filter) ? "" : "none";
+  }
+}
+
+function sortTable(tableId, colIndex) {
+  const table = document.getElementById(tableId);
+  const tbody = table.tBodies[0];
+  const rows = Array.from(tbody.rows);
+  const isNumeric = !isNaN(rows[0].cells[colIndex].innerText.trim());
+  let asc = table.getAttribute("data-sort-dir") !== "asc";
+
+  rows.sort((a, b) => {
+    let valA = a.cells[colIndex].innerText.trim();
+    let valB = b.cells[colIndex].innerText.trim();
+    if (isNumeric) {
+      return asc ? valA - valB : valB - valA;
+    } else {
+      return asc ? valA.localeCompare(valB) : valB.localeCompare(valA);
+    }
+  });
+
+  // Append sorted rows
+  for (let row of rows) {
+    tbody.appendChild(row);
+  }
+
+  // Toggle sort direction
+  table.setAttribute("data-sort-dir", asc ? "asc" : "desc");
+}
