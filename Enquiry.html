@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div>
+            <nav>               
+             <ul>
+            <a href="homepage.html">Homepage</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <a href="Books.html">BookshSelf</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <a href="Contact us.html">Contact us</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <a href="About us.html">About us</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <a href="Enquiry.html">Enquiry</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <a href="gallery.html">Gallery</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            </ul>
+            </nav>
+        </div>
+</body>
+
+<body>
+
+    <hr>
+     <p class="m">You may fill out this form the reasons of a book that was order was not deliver on the promised time, the book arrived to you damaged or the wrong book was deliver to you <br>
+        as was as requesting to becoming a Volunteer, or requesting to be sponsored by the company.
+    </p>
+
+    <h2>Please fill out form</h2>
+
+    <form action="action_page.php" method="GET">
+
+        <div>
+            <label for="fname">Name:</label>
+            <input type="text" id="fname" name="fname" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="lname">Surname:</label>
+            <input type="text" id="lname" name="lname" required>
+        </div>
+
+        <br>
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required >
+        </div>
+
+        <br>
+
+        <div>
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" name="pass" maxlength="12" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="phone">Phone No. :</label>
+            <input type="tel" id="phone" name="phone" placeholder="123 456 7890" maxlength="10">
+        </div>
+        
+        <br>
+
+        <div>
+            <label for="title">Reason for enquiry:</label>
+
+            <label for="Book">Book</label>
+            <input type="radio" id="Book" name="title" value="Book">
+
+            <label for="Volunteer">Volunteer</label>
+            <input type="radio" id="Volunteer" name="title" value="Volunteer">
+
+            <label for="Sponsor">Sponser</label>
+            <input type="radio" id="Sponsor" name="title" value="Sponsor">
+        </div>
+        
+        <br>
+
+        <p class="n"> *If selecting Book at the previous question* </p>
+        <div>
+            <label for="payment">Reason:</label>
+            <select id="payment" name="payment">
+                <option value="None">---None---</option>
+                <option value="damage">Damaged</option>
+                <option value="Late">Late</option>
+                <option value="Wrong">Wrong Book</option>
+            </select>
+        </div>
+       
+        <br>
+
+        <div>
+            <input type="Reset">
+        </div>
+
+        <br>
+
+        <div>
+            <input type="Submit">
+        </div>
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <div class="footer">
+    <p>Copyright &copy;2025; DK book-store  </p>
+    </div>
+</footer>
+
+</body>
+
+</html>

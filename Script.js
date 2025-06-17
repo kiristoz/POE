@@ -93,3 +93,35 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+    (function() {
+      emailjs.init("b-OzHNB_lGVfvhlzc"); 
+    })();
+
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const templateParams = {
+        name: document.getElementById("name").value,
+        surname: document.getElementById("surname").value,
+        phone: document.getElementById("phone").value,
+        message: document.getElementById("message").value,
+      };
+
+      emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+        .then(function(response) {
+          alert('Message sent successfully!');
+        }, function(error) {
+          alert('Failed to send the message: ' + error.text);
+        });
+    });
+
+
+  window.addEventListener('load', function () 
+  {
+    const preloader = document.getElementById('preloader');
+    const content = document.getElementById('content');
+
+    preloader.style.display = 'none';
+    content.style.display = 'block';
+  });

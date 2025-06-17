@@ -14,6 +14,7 @@
             <a href="Books.html">Bookshelf</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
             <a href="Contact us.html">Contact us</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
             <a href="About us.html">About us</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <a href="Enquiry.html">Enquiry</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
             <a href="gallery.html">Gallery</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
             </ul>
             </nav>
@@ -66,7 +67,49 @@
         </div>
 
 
+        <br>
 
+  <form action="submit_form.php" method="POST">
+    <h2>Please fill out the form</h2>
+
+    <div>
+        <label for="name">First Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+
+    <br>
+    
+    <div>
+         <label for="surname">Last Name:</label>
+         <input type="text" id="surname" name="surname" required>
+    </div>
+
+    <br>
+
+    <div>         
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required maxlength="10">
+    </div>
+
+    <br>
+
+    <div>
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+
+    <br>
+
+    <div>
+        <button type="submit">Send Message</button>
+    </div>
+
+  </form>
+
+
+  <br>
+  <br>
+  <br>
          <footer>
             <div class="footer">
             <p>Copyright &copy;2025; DK book-store </p>
