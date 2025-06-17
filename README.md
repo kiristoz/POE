@@ -13,11 +13,14 @@ thought it may seem lacking it serves as a good temple for future enhancement.
 -Added a form in both the enquiry and contact us. <br>
 -Added an animation for the logo on the homepage and about us. <br>
 -added links to 3 social media sites in about us. <br>
-Added a book
+-Added a search bar in bookshelf. <br>
+-Created a Robot.txt file.<br>
 
 ## Reference
-W3Schools:https://www.w3school.com
-Code bros on youtube: https://www.youtube.com/@BroCodez
-Learn Fast Make Things:https://www.youtube.com/watch?v=E6NO0rgFub4
-
+W3Schools:https://www.w3school.com <br>
+Code bros: https://www.youtube.com/@BroCodez <br>
+Learn Fast Make Things:https://www.youtube.com/watch?v=E6NO0rgFub4 <br>
+Brian Dean:https://www.youtube.com/watch?v=IkmPjeNKkBQ&t=198s <br>
+Dcode:https://www.youtube.com/watch?v=-HS9IIuT_Mo<br>
+Web Dev Simplified: https://www.youtube.com/watch?v=y17RuWkWdn8&t=388s
 
