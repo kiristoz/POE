@@ -15,7 +15,7 @@ thought it may seem lacking it serves as a good temple for future enhancement.
 -added links to 3 social media sites in about us. <br>
 -Added a search bar in bookshelf. <br>
 -Created a Robot.txt file.<br>
-
+-Added URL for the website example on the homepage.<br>
 ## Reference
 W3Schools:https://www.w3school.com <br>
 Code bros: https://www.youtube.com/@BroCodez <br>
