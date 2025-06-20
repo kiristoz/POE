@@ -165,3 +165,9 @@ function sortTable(tableId, colIndex) {
   // Toggle sort direction
   table.setAttribute("data-sort-dir", asc ? "asc" : "desc");
 }
+
+//image
+    window.onload = function() {
+      const img = document.getElementById('sec_img');
+      img.classList.add('moved');
+    };

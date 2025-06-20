@@ -415,3 +415,15 @@ img.hover-shadow {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+#sec_img
+{
+      position: absolute;
+      top: 50px;
+      left: 0;
+      transition: left 2s ease-in-out;
+    }
+
+.moved {
+      left: calc(100% - 100px);
+    }
